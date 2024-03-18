@@ -18,7 +18,7 @@ async def reenviar_mensaje(message, chat_destino):
 @client.on(events.NewMessage)
 async def main(event):
     # Reemplaza con el ID del chat origen
-    chat_origen = [927606242, -1001291285712, 906218834, -4104859139, -1001629605754, -1001179560361]
+    chat_origen = [927606242, -1001291285712, 906218834, -4104859139, -1001629605754, -1001179560361, 6485295670]
 
     # Reemplaza con el ID del chat destino
     chat_destino = -4106805637
