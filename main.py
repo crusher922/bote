@@ -17,14 +17,14 @@ async def reenviar_mensaje(message, chat_destino):
 # Escucha nuevos mensajes en el chat origen
 @client.on(events.NewMessage)
 async def main(event):
-    # Reemplaza con el ID del chat origen
-    chat_origen = [927606242, -1001291285712, 906218834, -4104859139, -1001629605754, -1001179560361, 6485295670]
+    chat_origen = [-1001629605754, 906218834, 927606242]
 
-    # Reemplaza con el ID del chat destino
     chat_destino = -4106805637
 
     if event.chat_id in chat_origen:
-        await reenviar_mensaje(event.message, chat_destino)
+        modified_message = "     👑💎💵💴  ACE Trading  💷💶💎👑 \n\n" + event.message.text
+
+        await client.send_message(chat_destino, modified_message)
 
 
 # Inicia el bucle de eventos del cliente
