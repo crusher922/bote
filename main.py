@@ -17,7 +17,7 @@ async def reenviar_mensaje(message, chat_destino):
 # Escucha nuevos mensajes en el chat origen
 @client.on(events.NewMessage)
 async def main(event):
-    chat_origen = [-1001629605754, 906218834, 927606242]
+    chat_origen = [-1001629605754, -1001179560361]
 
     chat_destino = -4106805637
 
